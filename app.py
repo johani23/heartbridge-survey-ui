@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "default_secret")
 
-# تحميل أسئلة popup
+# ØªØ­Ù…ÙŠÙ„ Ø£Ø³Ø¦Ù„Ø© popup
 with open("assets/prompts/popup_prompts.yaml", "r", encoding="utf-8") as f:
     popup_prompts = yaml.safe_load(f)
 
@@ -17,7 +17,7 @@ with open("assets/prompts/popup_prompts.yaml", "r", encoding="utf-8") as f:
 def get_popup():
     cluster = session.get("cluster_name", "The Idealist")
     prompts = popup_prompts.get(cluster, [])
-    return jsonify({"cluster": cluster, "prompt": prompts[0] if prompts else "لا يوجد سؤال حالياً"})
+    return jsonify({"cluster": cluster, "prompt": prompts[0] if prompts else "Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø³Ø¤Ø§Ù„ Ø­Ø§Ù„ÙŠØ§Ù‹"})
 
 @app.route("/recommend", methods=["POST"])
 def recommend():
