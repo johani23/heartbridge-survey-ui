@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>استبيان Heartbridge</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>استبيان التوافق العاطفي</h1>
+        <form id="survey-form">
+            <label>1. ما هو أصلك الاجتماعي؟</label>
+            <select name="background">
+                <option value="حضري">حضري</option>
+                <option value="بدوي">بدوي</option>
+                <option value="قبلي">قبلي</option>
+                <option value="مختلط">مختلط</option>
+            </select>
+
+            <label>2. وضع الأبوين:</label>
+            <select name="parents">
+                <option value="متزوجان">متزوجان</option>
+                <option value="منفصلان">منفصلان</option>
+                <option value="مطلقان">مطلقان</option>
+                <option value="متوفى أحدهما أو كلاهما">متوفى أحدهما أو كلاهما</option>
+            </select>
+
+            <label>3. كم عدد الكتب التي قرأتها خلال آخر 12 شهر؟</label>
+            <input type="number" name="books_read" min="0" max="100" />
+
+            <label>4. ما هو الدافع الرئيسي وراء رغبتك في العلاقة؟</label>
+            <select name="motive">
+                <option value="حب حقيقي">حب حقيقي</option>
+                <option value="الهروب من واقع مزعج">الهروب من واقع مزعج</option>
+                <option value="الاستقرار">الاستقرار</option>
+                <option value="الاحتياج العاطفي">الاحتياج العاطفي</option>
+            </select>
+
+            <label>5. كيف تصف رغبتك داخل العلاقة؟</label>
+            <select name="desire">
+                <option value="رغبة في مشاركة حقيقية">رغبة في مشاركة حقيقية</option>
+                <option value="شخص يحتويك">شخص يحتويك</option>
+                <option value="شخص يقدرك">شخص يقدرك</option>
+                <option value="تجربة جديدة">تجربة جديدة</option>
+            </select>
+
+            <button type="submit">إرسال</button>
+        </form>
+        <div id="response"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
