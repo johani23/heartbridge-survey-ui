@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>استبيان التوافق العاطفي - Heartbridge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>استبيان التوافق العاطفي</h2>
+        <form id="survey-form">
+            <fieldset>
+                <legend>🧑 عنك</legend>
+                <label>1. ما هو أصلك الاجتماعي؟</label>
+                <select id="user_origin">
+                    <option>بدوي</option>
+                    <option>حضري</option>
+                    <option>قبلي</option>
+                    <option>مختلط</option>
+                </select>
+
+                <label>2. وضع الأبوين:</label>
+                <select id="user_parents">
+                    <option>متزوجان</option>
+                    <option>منفصلان</option>
+                    <option>مطلقان</option>
+                    <option>أحدهما أو كلاهما متوفى</option>
+                </select>
+
+                <label>3. كم عدد الكتب التي قرأتها خلال آخر 12 شهر؟</label>
+                <input type="number" id="user_books">
+
+                <label>4. ما هو الدافع الرئيسي لرغبتك في العلاقة؟</label>
+                <select id="user_motivation">
+                    <option>حب حقيقي</option>
+                    <option>الهروب من وضع عائلي</option>
+                    <option>رغبة في الاستقرار</option>
+                    <option>ضغط اجتماعي</option>
+                </select>
+
+                <label>5. كيف تصف رغبتك داخل العلاقة؟</label>
+                <select id="user_desire">
+                    <option>رغبة في مشاركة حقيقية</option>
+                    <option>احتياج للاهتمام والرعاية</option>
+                    <option>خوف من الفقد</option>
+                </select>
+
+                <label>6. كيف تصف علاقتك بوالدتك؟</label>
+                <select id="user_mother_rel">
+                    <option>عادية</option>
+                    <option>قريبة جدًا</option>
+                    <option>معقدة أو متوترة</option>
+                </select>
+
+                <label>7. ما هو المستوى التعليمي لوالدتك؟</label>
+                <select id="user_mother_edu">
+                    <option>ابتدائي</option>
+                    <option>متوسط</option>
+                    <option>ثانوي</option>
+                    <option>جامعي</option>
+                    <option>دراسات عليا</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>👤 عن الطرف الآخر</legend>
+                <label>8. ما هو أصله الاجتماعي؟</label>
+                <select id="other_origin">
+                    <option>بدوي</option>
+                    <option>حضري</option>
+                    <option>قبلي</option>
+                    <option>مختلط</option>
+                </select>
+
+                <label>9. وضع والديه:</label>
+                <select id="other_parents">
+                    <option>متزوجان</option>
+                    <option>منفصلان</option>
+                    <option>مطلقان</option>
+                    <option>أحدهما أو كلاهما متوفى</option>
+                </select>
+
+                <label>10. كم عدد الكتب التي قرأها خلال آخر 12 شهر؟</label>
+                <input type="number" id="other_books">
+
+                <label>11. ما هو الدافع الرئيسي لرغبته في العلاقة؟</label>
+                <select id="other_motivation">
+                    <option>حب حقيقي</option>
+                    <option>الهروب من وضع عائلي</option>
+                    <option>رغبة في الاستقرار</option>
+                    <option>ضغط اجتماعي</option>
+                </select>
+
+                <label>12. كيف يصف رغبته داخل العلاقة؟</label>
+                <select id="other_desire">
+                    <option>رغبة في مشاركة حقيقية</option>
+                    <option>احتياج للاهتمام والرعاية</option>
+                    <option>خوف من الفقد</option>
+                </select>
+
+                <label>13. كيف يصف علاقته بوالدته؟</label>
+                <select id="other_mother_rel">
+                    <option>عادية</option>
+                    <option>قريبة جدًا</option>
+                    <option>معقدة أو متوترة</option>
+                </select>
+
+                <label>14. ما هو المستوى التعليمي لوالدته؟</label>
+                <select id="other_mother_edu">
+                    <option>ابتدائي</option>
+                    <option>متوسط</option>
+                    <option>ثانوي</option>
+                    <option>جامعي</option>
+                    <option>دراسات عليا</option>
+                </select>
+            </fieldset>
+
+            <label>15. انسخ المحادثة الأخيرة بينك وبين الطرف الآخر (إن وجدت):</label>
+            <textarea id="chat" rows="3"></textarea>
+
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
