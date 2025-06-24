@@ -1,4 +1,6 @@
-Flask
-flask-cors
-gunicorn
-pyyaml
+
+fastapi
+uvicorn
+scikit-learn
+pandas
+joblib
